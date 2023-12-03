@@ -1,5 +1,5 @@
 // Using then wrapper to ensure json is loaded before starting any other function
-d3.json('http://falconpunch082.github.io/samples.json').then(function(d){
+d3.json('https://falconpunch082.github.io/samples.json').then(function(d){
     // Ensuring that data is read
     console.log(d);
 
