@@ -1,8 +1,8 @@
-// Reading json file provided
-let d = d3.json('http://falconpunch082.github.io/samples.json');
-
 // Using then wrapper to ensure json is loaded before starting any other function
-d.then(function(d){
+d3.json('http://falconpunch082.github.io/samples.json').then(function(d){
+    // Ensuring that data is read
+    console.log(d);
+
     // Populate dropdown list with names of individuals with for loop 
     for (let i = 0; i < d["names"].length; i++) {
         d3.select("#selDataset").append("option").text(d["names"][i]);
