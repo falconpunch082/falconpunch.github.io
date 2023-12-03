@@ -135,7 +135,7 @@ d3.json('https://falconpunch082.github.io/samples.json').then(function(d){
         let chartData = {
             gauge: { axis: { visible: true, range: [0, 9] } },
             value: wfreq,
-            title: {text: "Belly Button Washing Frequency (Scrubs per Week)"},
+            title: {text: "Washing Frequency (scrubs/week)"},
             type: 'indicator',
             mode: 'gauge+number'
         }
