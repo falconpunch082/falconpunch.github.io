@@ -1,5 +1,5 @@
 // Reading json file provided
-let d = d3.json('http://localhost:5500/samples.json');
+let d = d3.json('http://falconpunch082.github.io/samples.json');
 
 // Using then wrapper to ensure json is loaded before starting any other function
 d.then(function(d){
